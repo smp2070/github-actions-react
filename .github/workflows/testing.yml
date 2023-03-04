@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Get repository code
@@ -13,4 +13,3 @@ jobs:
         run: npm ci
       - name: Test application
         run: npm run test
-        
